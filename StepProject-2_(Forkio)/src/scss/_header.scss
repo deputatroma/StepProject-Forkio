@@ -1,0 +1,250 @@
+.header{
+    background-color: $background-color;
+
+    @media (min-width: 993px){
+        background-color: $background-color-secondary;
+    }
+}
+
+.navbar{
+    height: 100px;
+    @include flex(space-between, center);
+    padding: 0 5px 0 5px;
+    position: relative;
+
+    @media (min-width: 481px){
+        height: 120px;
+        padding-top: 7px;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 993px){
+        height: 120px;
+        padding-top: 14px;
+        justify-content: right;
+    }
+}
+
+.logo-container{
+    display: flex;
+    align-items: flex-end;
+    order: 0;
+
+    &__svg{
+        width: 43px;
+        height: 41px;
+        transition: 0.3s;
+    }
+    
+    &__svg-path{
+        fill: $color-header;
+        transition: 0.3s;
+    }  
+      
+    &:hover{
+        .logo-container__svg-path{
+            fill: $color-hover;
+        }
+        .logo-container__logo-text{
+            color: $color-hover;
+        }
+    }
+
+    &__logo-text{
+        display: none;
+        font-family: $font-primary;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $color-header;
+        margin-bottom: 5px;
+        transition: 0.3s;
+
+        
+        @media (min-width: 481px){
+            display: block;
+            margin-left: 15px;
+        }
+    }
+
+    &__menu-button{
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (min-width: 993px){
+        order: 0;
+        margin-right: auto;
+    }
+}
+
+.menu-button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    @media (min-width: 481px){
+        display:none;
+    }
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top:100px;
+    width: 290px;
+    background-color:$background-color-menu;
+
+    &.menu--active{
+        display: block;
+
+        @media (min-width: 481px){
+            display: flex;
+        }
+    }
+
+    &-item{
+        height: 87px;
+        border-bottom: 3px solid $color-border;
+        position: relative;
+
+        &-link{
+            box-sizing: border-box;
+            font-family: $font-primary;
+            color: $button-text-color;
+            font-size: 26px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 35px 0 0 39px;
+            transition: 0.3s;
+
+            &:hover{
+                color: $color-menu;
+            }
+
+            @media (min-width: 481px){
+                width: auto;
+                height: auto;
+                padding: 0;
+                color: $color-header;
+                font-size: 16px;
+                font-weight: 700;
+                margin: 0 11px 0 11px;
+
+                &:hover{
+                    color: $color-hover;
+                }
+            }
+
+            @media (min-width: 585px){
+                margin: 0 24px 0 24px;
+            }
+
+        }
+
+        &--active::before{
+            content: "";
+            display: block;
+            width: 8px;
+            height: 53px;
+            background-color: $color-menu;
+            position: absolute;
+            left: 2px;
+            top: 19px;
+
+            @media (min-width: 481px){
+                display: none;
+            }
+        }
+
+        @media (min-width: 481px){
+            height: auto;
+            border: none;
+        }
+    }
+
+    @media (min-width: 481px){
+        width: 100%;
+        display: flex;
+        position: static;
+        background-color: transparent;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+    @media (min-width: 993px){
+        order: 1;
+        width: auto;
+    }
+}
+
+.forkApp-section{
+    height: 570px;
+    background-color: $background-color-secondary;
+    background-image: url(../img/fork-app/fork-app-background.png);
+    background-position: right 50% bottom 25%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
+    @media(min-width: 481px){
+        padding-top: 65px;
+        height: 620px;
+        background-position: right 50% bottom 5%;
+    }
+    @media(min-width: 993px){
+        padding-top: 55px;
+        background-position: right 50% bottom 10%;
+    }
+
+    &__title{
+        color: $color-text;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+
+        @media(min-width: 481px){
+            font-size: 72px;
+        }
+
+        @media(min-width: 993px){
+            font-size: 82px;
+        }
+    }
+
+    &__text{
+        color: $color-header;
+        font-family: $font-primary;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: capitalize;
+        line-height: 24px;
+
+        @media(min-width: 481px){
+            font-size: 24px;
+            text-transform: none;
+        }
+
+        @media(min-width: 993px){
+            font-size: 30px;
+        }
+    }
+
+    &__ver{
+        color: $color-text-content;
+        font-family: $font-primary;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+
+        @media(min-width: 993px){
+            font-size: 16px;
+        }
+    }
+}

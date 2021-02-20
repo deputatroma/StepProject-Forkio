@@ -1,0 +1,83 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "header";
+@import "section-revolutionary-editor";
+@import "section-here-is-what-you-get";
+@import "section-talking-about";
+@import "section-here-is-what-you-get";
+
+.content-container{
+    box-sizing: border-box;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+
+    @media (min-width: 993px){
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__flex{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+.button{
+    color: $button-text-color;
+    background-color: $button-back-color;
+    border: 1px solid $button-back-color;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: $font-btn;
+    height: 37px;
+    padding: 0 25px 0 25px;
+    border-radius: 40px;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+
+    &:hover{
+        box-sizing: border-box;
+        border: 1px solid $button-back-color;
+        color: $button-text-color-hover;
+        background-color: $button-back-color-hover;
+
+    }
+
+    @media (min-width: 481px){
+        font-size: 16px;
+        padding: 0 37px 0 37px;
+    }
+
+    &.button-buy-now{
+        @media (min-width: 481px){
+            order: 1;
+        }
+
+        @media (min-width: 993px){
+            order: 2;
+            margin-left: 24px;
+        }
+    }
+}
+
+.section-title{
+    font-family: $font-primary;
+    color: $color-text;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+
+    @media(min-width: 481px){
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    @media(min-width: 993px){
+        font-size: 48px;
+        line-height: 50px;
+    }
+}
