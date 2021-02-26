@@ -364,6 +364,8 @@
   white-space: nowrap;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
+  .rev-editor-btns-btn:hover {
+    fill: #8D81AC; }
 
 .here-is-what-you-get {
   background: #F4F4F4;
