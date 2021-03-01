@@ -36,9 +36,9 @@
     fill: #8D81AC;
     transition: 0.3s; }
   .logo-container:hover .logo-container__svg-path {
-    fill: #FFFFFF; }
+    fill: white; }
   .logo-container:hover .logo-container__logo-text {
-    color: #FFFFFF; }
+    color: white; }
   .logo-container__logo-text {
     display: none;
     font-family: "Montserrat", sans-serif;
@@ -88,7 +88,7 @@
     .menu-item-link {
       box-sizing: border-box;
       font-family: "Montserrat", sans-serif;
-      color: #FFFFFF;
+      color: white;
       font-size: 26px;
       display: block;
       width: 100%;
@@ -107,7 +107,7 @@
           font-weight: 700;
           margin: 0 11px 0 11px; }
           .menu-item-link:hover {
-            color: #FFFFFF; } }
+            color: white; } }
       @media (min-width: 585px) {
         .menu-item-link {
           margin: 0 24px 0 24px; } }
@@ -159,7 +159,7 @@
       padding-top: 55px;
       background-position: right 50% bottom 10%; } }
   .forkApp-section__title {
-    color: #FFFFFF;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -195,37 +195,6 @@
     @media (min-width: 993px) {
       .forkApp-section__ver {
         font-size: 16px; } }
-  .forkApp-section__btn-download {
-    font-size: 21px;
-    color: #FFFFFF;
-    background-color: #8D81AC;
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    width: 390px;
-    height: 62px;
-    text-align: center;
-    border-radius: 40px;
-    top: 428px;
-    left: 37.5%; }
-    .forkApp-section__btn-download:hover {
-      border: 2px solid #8D81AC;
-      color: #8D81AC;
-      background-color: white; }
-    @media (max-width: 1200px) {
-      .forkApp-section__btn-download {
-        left: 34%; } }
-    @media (max-width: 768px) {
-      .forkApp-section__btn-download {
-        left: 24%;
-        top: 438px; } }
-    @media (max-width: 320px) {
-      .forkApp-section__btn-download {
-        left: 7%;
-        top: 398px;
-        width: 280px;
-        height: 45px;
-        font-size: 18px; } }
 
 .revolutionary-editor-section-btn {
   display: flex;
@@ -233,7 +202,7 @@
   align-items: center;
   margin-top: -23px; }
   .revolutionary-editor-section-btn__download {
-    color: #FFFFFF;
+    color: white;
     background-color: #8D81AC;
     position: relative;
     font-family: "Montserrat", sans-serif;
@@ -368,6 +337,7 @@
     fill: #8D81AC; }
 
 .here-is-what-you-get {
+  height: 1500px;
   background: #F4F4F4;
   justify-content: center;
   display: flex; }
@@ -378,7 +348,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, [col-start] 1fr);
   gap: unset;
-  grid-template-rows: repeat(2, 130px 511px); }
+  grid-template-rows: repeat(3, 140px 411px); }
 
 .sections-here-is > * {
   max-width: 700px;
@@ -386,10 +356,10 @@
 
 .here-is-right-block-image {
   background-image: url("../img/here-is-what-u-get/img-1.png");
-  grid-row: 4 / span 3;
+  grid-row: 5/ span 2;
   grid-column: 1;
-  margin-top: 150px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .here-is-right-block-text {
   font-size: 42px;
@@ -404,8 +374,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #8D81AC;
-  padding-left: 20px;
-  text-align: center; }
+  padding-left: 20px; }
   .h3-here-is-what-you-get::after {
     content: '\003E'; }
   .h3-here-is-what-you-get::before {
@@ -444,8 +413,7 @@
     font-weight: 700;
     line-height: 38px;
     padding-left: 0;
-    max-width: 230px;
-    text-align: center; }
+    max-width: 230px; }
   .here-is-what-you-get {
     background-color: inherit;
     height: 1630px; }
@@ -476,11 +444,11 @@
       font-family: "Lato", sans-serif;
       font-weight: 400; }
   .here-is-right-block-image {
+    display: grid;
     background-size: 317px 380px;
     margin: 0;
-    margin-top: -30px;
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 6;
     float: right;
     width: 309px;
     height: 350px; } }
@@ -488,13 +456,12 @@
 @media (min-width: 481px) {
   .here-is-what-you-get {
     background: transparent;
-    height: 1300px; }
+    height: 1200px; }
   .h3-here-is-what-you-get {
     font-size: 44px;
     font-weight: 700;
     line-height: 44px;
-    padding-left: 0;
-    text-align: center; }
+    padding-left: 0; }
   .here-is-right-block-text {
     grid-column: 1;
     grid-row: 1;
@@ -520,12 +487,13 @@
       grid-template-columns: 111px, 511px;
       gap: 23px; }
   .here-is-right-block-image {
+    background-size: contain;
     margin: 0;
     display: grid;
     grid-column: 1;
-    grid-row: 3 / span 4;
-    height: 511px;
-    grid-template-columns: 300px; } }
+    grid-row: 3 / span 5;
+    grid-template-columns: auto;
+    grid-template-rows: auto; } }
 
 @media (min-width: 993px) {
   .here-is-what-you-get {
@@ -536,9 +504,8 @@
     grid-row: 1;
     max-width: 768px;
     padding-left: 0;
+    grid-column: 2;
     margin: 0; }
-  .sections-here-is > * {
-    grid-column: col-start 1 / span 2; }
   .sections-here-is {
     background-color: #F4F4F4;
     max-width: 1170px;
@@ -548,12 +515,12 @@
     grid-template-rows: repeat(2, 130px auto-fill); }
   .here-is-right-block-image {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3 / span 12;
     margin: 0;
     max-width: 610px;
-    background-size: 620px 511px;
+    background-size: contain;
     display: grid;
-    grid-template-columns: 610px;
+    grid-template-columns: auto;
     gap: 19px; }
   .h3-here-is-what-you-get {
     font-size: 48px;
@@ -565,7 +532,7 @@
     padding-right: 40px; }
     .here-is-left-block__box {
       display: grid;
-      grid-template-columns: 111px auto;
+      grid-template-columns: 111px 390px;
       gap: 23px;
       padding-top: 23px; }
     .here-is-left-block__content {
@@ -649,7 +616,7 @@
     font-weight: 700;
     line-height: 24px;
     font-style: italic;
-    color: #FFFFFF; }
+    color: white; }
   .brand-item__img-container {
     height: 64px;
     display: flex;
@@ -657,6 +624,7 @@
     align-items: center; }
 
 .here-is-what-you-get {
+  height: 1500px;
   background: #F4F4F4;
   justify-content: center;
   display: flex; }
@@ -667,7 +635,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, [col-start] 1fr);
   gap: unset;
-  grid-template-rows: repeat(2, 130px 511px); }
+  grid-template-rows: repeat(3, 140px 411px); }
 
 .sections-here-is > * {
   max-width: 700px;
@@ -675,10 +643,10 @@
 
 .here-is-right-block-image {
   background-image: url("../img/here-is-what-u-get/img-1.png");
-  grid-row: 4 / span 3;
+  grid-row: 5/ span 2;
   grid-column: 1;
-  margin-top: 150px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .here-is-right-block-text {
   font-size: 42px;
@@ -693,8 +661,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #8D81AC;
-  padding-left: 20px;
-  text-align: center; }
+  padding-left: 20px; }
   .h3-here-is-what-you-get::after {
     content: '\003E'; }
   .h3-here-is-what-you-get::before {
@@ -733,8 +700,7 @@
     font-weight: 700;
     line-height: 38px;
     padding-left: 0;
-    max-width: 230px;
-    text-align: center; }
+    max-width: 230px; }
   .here-is-what-you-get {
     background-color: inherit;
     height: 1630px; }
@@ -765,11 +731,11 @@
       font-family: "Lato", sans-serif;
       font-weight: 400; }
   .here-is-right-block-image {
+    display: grid;
     background-size: 317px 380px;
     margin: 0;
-    margin-top: -30px;
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 6;
     float: right;
     width: 309px;
     height: 350px; } }
@@ -777,13 +743,12 @@
 @media (min-width: 481px) {
   .here-is-what-you-get {
     background: transparent;
-    height: 1300px; }
+    height: 1200px; }
   .h3-here-is-what-you-get {
     font-size: 44px;
     font-weight: 700;
     line-height: 44px;
-    padding-left: 0;
-    text-align: center; }
+    padding-left: 0; }
   .here-is-right-block-text {
     grid-column: 1;
     grid-row: 1;
@@ -809,12 +774,13 @@
       grid-template-columns: 111px, 511px;
       gap: 23px; }
   .here-is-right-block-image {
+    background-size: contain;
     margin: 0;
     display: grid;
     grid-column: 1;
-    grid-row: 3 / span 4;
-    height: 511px;
-    grid-template-columns: 300px; } }
+    grid-row: 3 / span 5;
+    grid-template-columns: auto;
+    grid-template-rows: auto; } }
 
 @media (min-width: 993px) {
   .here-is-what-you-get {
@@ -825,9 +791,8 @@
     grid-row: 1;
     max-width: 768px;
     padding-left: 0;
+    grid-column: 2;
     margin: 0; }
-  .sections-here-is > * {
-    grid-column: col-start 1 / span 2; }
   .sections-here-is {
     background-color: #F4F4F4;
     max-width: 1170px;
@@ -837,12 +802,12 @@
     grid-template-rows: repeat(2, 130px auto-fill); }
   .here-is-right-block-image {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3 / span 12;
     margin: 0;
     max-width: 610px;
-    background-size: 620px 511px;
+    background-size: contain;
     display: grid;
-    grid-template-columns: 610px;
+    grid-template-columns: auto;
     gap: 19px; }
   .h3-here-is-what-you-get {
     font-size: 48px;
@@ -854,7 +819,7 @@
     padding-right: 40px; }
     .here-is-left-block__box {
       display: grid;
-      grid-template-columns: 111px auto;
+      grid-template-columns: 111px 390px;
       gap: 23px;
       padding-top: 23px; }
     .here-is-left-block__content {
@@ -874,152 +839,162 @@
       padding-top: 16px; } }
 
 .fork-subscription-pricing-section {
-  padding: 12px 10px 93px;
+  height: auto;
+  background-image: url("../img/people-are-talking/background-pricing-section.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #4E3B4E;
+  padding-bottom: 88px; }
+
+.section-title.margin {
+  font-size: 28;
+  padding-top: 88px; }
+
+.dollarSign {
+  font-weight: normal; }
+
+.prices-container {
   font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
-  background-color: #4b3b4e; }
-
-.prices-container__title {
-  font-size: 28px;
-  line-height: 42px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 14px;
-  margin-bottom: 51px; }
-
-.prices-container-list__item {
-  display: flex;
-  flex-direction: column;
+  margin-top: 61px;
   align-items: center;
-  margin: 0 auto 14px auto;
-  max-width: 256px; }
-  .prices-container-list__item:nth-of-type(3) {
-    max-width: 299px; }
-  .prices-container-list__item-category {
-    text-align: center;
-    width: 100%;
-    padding: 40px 0;
-    font-size: 24px;
-    line-height: 26px;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.06); }
-    .prices-container-list__item-category--active {
-      padding: 47px 0;
-      background-color: rgba(0, 0, 0, 0.11); }
-  .prices-container-list__item-cost {
-    background-color: rgba(255, 255, 255, 0.11);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .prices-container-list__item-cost--active {
-      background-color: rgba(70, 48, 72, 0.83); }
-    .prices-container-list__item-cost-inner {
-      font-size: 60px;
-      line-height: 62px;
-      padding: 230px 0 20px;
+  justify-content: center;
+  text-align: center;
+  color: white; }
+  .prices-container__packages {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    width: 257px;
+    height: 457px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    grid-template-rows: 125px;
+    background: rgba(255, 255, 255, 0.11); }
+  .prices-container__choosed {
+    margin: 0 auto;
+    background-color: rgba(70, 48, 72, 0.84);
+    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 299px;
+    height: 560px; }
+    .prices-container__choosed__head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.11);
+      height: 97px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: unset; }
+    .prices-container__choosed__price {
+      font-size: 82px;
       font-weight: 700;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .prices-container-list__item-cost-inner--active {
-        font-size: 82px; }
-      .prices-container-list__item-cost-inner:before {
-        content: '$';
-        font-weight: normal;
-        position: relative;
-        display: block; }
-    .prices-container-list__item-cost-subtitle {
-      font-size: 14px;
+      line-height: 120px; }
+    .prices-container__choosed__purchaseBtn {
+      margin-top: 87px;
+      color: white;
       text-transform: uppercase;
-      line-height: 16px; }
-      .prices-container-list__item-cost-subtitle::after {
-        content: '';
-        width: 60px;
-        height: 5px;
-        background: #8D81AC;
-        display: block;
-        margin: 0 auto;
-        margin-top: 38px; }
-    .prices-container-list__item-cost-advantage {
-      text-transform: capitalize;
-      font-size: 16px;
-      line-height: 18px;
-      padding-top: 30px; }
-      .prices-container-list__item-cost-advantage--level {
-        margin-bottom: 67px; }
-    .prices-container-list__item-cost-support {
-      text-transform: capitalize;
-      font-size: 16px;
-      line-height: 18px;
-      padding: 7px 0 38px 0; }
-      .prices-container-list__item-cost-support--active {
-        padding: 7px 0 83px 0; }
-    .prices-container-list__item-cost-btn {
-      text-transform: uppercase;
-      width: 160px;
       font-size: 15px;
-      line-height: 17px;
-      border: 1px solid transparent;
+      font-weight: 400;
+      line-height: unset;
       border-radius: 40px;
-      background-color: rgba(255, 255, 255, 0.15);
-      padding: 15px 17px;
-      cursor: pointer;
-      color: #FFFFFF;
-      margin: 0 auto 38px auto; }
-      .prices-container-list__item-cost-btn--active {
-        font-size: 16px;
-        padding: 19px 29px;
-        width: 190px; }
+      width: 163px;
+      height: 45px;
+      background-color: rgba(255, 255, 255, 0.15); }
+      .prices-container__choosed__purchaseBtn:hover {
+        border: 2px solid #8D81AC;
+        color: #8D81AC;
+        background-color: white;
+        transition: 1.5s;
+        cursor: pointer; }
+  .prices-container__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.06);
+    height: 97px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: unset; }
+  .prices-container__price {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100px; }
+  .prices-container__perMonth {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: unset; }
+    .prices-container__perMonth::after {
+      content: '';
+      display: block;
+      background-color: #8D81AC;
+      width: 60px;
+      height: 5px;
+      top: 46px;
+      margin: 0 auto;
+      position: relative; }
+  .prices-container__options {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 91px; }
+  .prices-container__purchaseBtn {
+    margin-top: 42px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: unset;
+    border-radius: 40px;
+    width: 163px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.15); }
+    .prices-container__purchaseBtn.plusMargin {
+      position: relative;
+      top: 17px; }
+    .prices-container__purchaseBtn:hover {
+      border: 2px solid #8D81AC;
+      color: #8D81AC;
+      background-color: white;
+      transition: 1.5s;
+      cursor: pointer; }
 
-@media screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .prices-container {
-    padding: 4px 0 68px; }
-    .prices-container__title {
-      font-size: 42px;
-      line-height: 44px;
-      padding-top: 88px;
-      margin-bottom: 39px; }
-    .prices-container-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      max-width: 595px;
-      flex-wrap: wrap;
-      margin: 0 auto; }
-      .prices-container-list__item {
-        max-width: 257px;
-        width: 100%;
-        align-content: center;
-        margin-bottom: 42px;
-        align-self: center; }
-        .prices-container-list__item:nth-of-type(3) {
-          max-width: 299px; } }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, auto));
+    gap: 25px;
+    margin: 0 auto; }
+    .prices-container__packages {
+      justify-self: center; }
+      .prices-container__packages:nth-child(1) {
+        justify-self: end; }
+  .section-title.margin {
+    font-size: 28px;
+    padding-top: 14px;
+    padding-bottom: 32px; } }
 
-@media screen and (min-width: 993px) {
+@media (min-width: 993px) {
+  .fork-subscription-pricing-section {
+    height: auto; }
   .prices-container {
-    padding: 8px 0 97px; }
-    .prices-container__box {
-      max-width: 1200px;
-      margin: 0 auto; }
-    .prices-container__title {
-      font-size: 48px;
-      line-height: 50px;
-      padding-top: 112px;
-      margin-bottom: 60px; }
-    .prices-container-list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      place-content: center;
-      gap: 14px;
-      max-width: 1200px; }
-      .prices-container-list__item {
-        max-width: 257px;
-        width: 100%;
-        place-content: center; }
-        .prices-container-list__item:nth-of-type(3) {
-          max-width: 299px; } }
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, auto));
+    gap: 25px; }
+  .section-title.margin {
+    font-size: 48px;
+    padding-top: 50px;
+    padding-bottom: 61px; }
+  .section-title {
+    font-size: 42px;
+    font-weight: unset;
+    line-height: 44px; } }
 
 .content-container {
   box-sizing: border-box;
@@ -1036,7 +1011,7 @@
     align-items: center; }
 
 .button {
-  color: #FFFFFF;
+  color: white;
   background-color: #8D81AC;
   border: 1px solid #8D81AC;
   font-size: 15px;
@@ -1066,7 +1041,7 @@
 
 .section-title {
   font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
+  color: white;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
